@@ -1,0 +1,56 @@
+/* src/components/Footer/Footer.module.css */
+.footerContainer {
+  background-color: #080808;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 80px 4% 40px 4%;
+}
+
+.footerContent {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.socialGrid {
+  display: flex;
+  gap: 16px;
+}
+
+.socialBox {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-pure-white);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: background-color 0.3s var(--cb-luxury), border-color 0.3s var(--cb-luxury), color 0.3s var(--cb-luxury);
+}
+
+.socialBox:hover {
+  background-color: var(--text-pure-white);
+  border-color: var(--text-pure-white);
+  color: var(--bg-solid-black);
+}
+
+.copyrightRow {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 30px;
+  text-align: center;
+}
+
+.copyText {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: var(--text-dark-grey);
+  text-transform: uppercase;
+}

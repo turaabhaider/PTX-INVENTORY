@@ -1,0 +1,230 @@
+/* src/components/ProductDetail/ProductDetail.module.css */
+.detailWrapper {
+  background-color: var(--bg-matte-black);
+  min-height: 100vh;
+  padding: 160px 8% 120px 8%;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--text-muted-beige);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  outline: none;
+}
+
+.backBtn:hover {
+  opacity: 1;
+}
+
+.backArrow {
+  transition: transform 0.3s var(--cb-luxury);
+}
+
+.backBtn:hover .backArrow {
+  transform: translateX(-4px);
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Light warm luxury studio portrait image box */
+
+/* Find this section inside src/components/ProductDetail/ProductDetail.module.css and add the rule below */
+
+.imageContainer {
+  background-color: #f4f3f0; /* Default warm grey for Menswear */
+  aspect-ratio: 1.1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  transition: background-color 0.4s var(--cb-luxury);
+}
+
+/* ADD THIS NEW CLASS FOR JUNIORS HIGH CONTRAST PROFILE */
+.darkBoxBg {
+  background-color: #141414 !important;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.displayImage {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+/* Specs layout styling */
+.specsPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.serialCode {
+  font-family: var(--font-display);
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: var(--text-muted-beige);
+  margin-bottom: 12px;
+}
+
+.productTitle {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--text-pure-white);
+  margin-bottom: 8px;
+}
+
+.fabricSubheading {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-muted-beige);
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+}
+
+.gsmRow {
+  margin-bottom: 40px;
+}
+
+.gsmBadge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.gsmLabel {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted-beige);
+  padding: 6px 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gsmValue {
+  color: var(--text-pure-white);
+  padding: 6px 14px;
+}
+
+.sectionLabel {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--text-dark-grey);
+  display: block;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 8px;
+}
+
+.colorSection {
+  margin-bottom: 40px;
+}
+
+.colorRow {
+  display: flex;
+  gap: 12px;
+}
+
+.colorCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Luxury Structured Inventory Grid Matrix Table */
+.inventoryTableSection {
+  margin-top: 20px;
+}
+
+.gridTable {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.tableColumn {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+
+.sizeHeader {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-pure-white);
+  padding: 12px 0;
+  background-color: #161616;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.quantityCell {
+  font-size: 13px;
+  color: var(--text-muted-beige);
+  padding: 16px 0;
+  font-weight: 400;
+}
+
+/* Total Metric Footer Block */
+.totalAggregatorRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+
+.totalLabel {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--text-dark-grey);
+}
+
+.totalValue {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-pure-white);
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridTable {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

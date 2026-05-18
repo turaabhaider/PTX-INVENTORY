@@ -1,0 +1,41 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --bg-matte-black: #0b0b0b;
+  --bg-solid-black: #000000;
+  --bg-card-charcoal: #161616;
+  --text-pure-white: #ffffff;
+  --text-muted-beige: #d5cfc5;
+  --text-dark-grey: #707070;
+  
+  --font-display: 'Montserrat', sans-serif;
+  --font-editorial: 'Playfair Display', serif;
+  
+  --cb-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none; /* Hidden for custom luxury interactive cursor */
+}
+
+body {
+  background-color: var(--bg-matte-black);
+  color: var(--text-pure-white);
+  font-family: var(--font-display);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-solid-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted-beige);
+}

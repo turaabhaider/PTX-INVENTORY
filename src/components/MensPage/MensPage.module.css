@@ -1,0 +1,226 @@
+/* src/components/MensPage/MensPage.module.css */
+.mensWrapper {
+  background-color: var(--bg-matte-black);
+  min-height: 100vh;
+  padding: 180px 6% 120px 6%;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.lineTag {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--text-muted-beige);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.mainTitle {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-pure-white);
+}
+
+.itemCounter {
+  font-family: var(--font-display);
+  font-size: 11px;
+  color: var(--text-dark-grey);
+  letter-spacing: 0.1em;
+  margin-top: 14px;
+}
+
+/* Catalog Asymmetric Grid Structure */
+.productsGrid {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.productCard {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.4s var(--cb-luxury), background-color 0.4s var(--cb-luxury);
+}
+
+.productCard:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+  background-color: #141414;
+}
+
+/* Image Visual Box - UPDATED FOR HIGH CONTRAST LUXURY STUDIO LIGHTING */
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #f4f3f0; /* Warm, ultra-premium editorial background light grey */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s var(--cb-luxury);
+}
+
+.productCard:hover .imageFrame {
+  background-color: #eae8e3; /* Slightly deeper tone on hover for immersion */
+}
+
+.productImage {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: transform 0.6s var(--cb-luxury);
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.04);
+}
+
+/* Status Indicator */
+.statusBadge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.75); /* Darker opacity for high visibility over white */
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-pure-white);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.pulseDot {
+  width: 5px;
+  height: 5px;
+  background-color: #4ade80; /* Elegant bright neon green */
+  border-radius: 50%;
+  box-shadow: 0 0 8px #4ade80;
+}
+
+/* Technical Specification Panel */
+.specsContainer {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.productName {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--text-pure-white);
+}
+
+/* Minimalist Tech GSM Badge */
+.gsmChip {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.gsmLabel {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted-beige);
+  padding: 4px 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.gsmValue {
+  color: var(--text-pure-white);
+  padding: 4px 10px;
+}
+
+.fabricDetails {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-dark-grey);
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  min-height: 42px; /* Keeps card scaling balanced naturally */
+}
+
+/* Premium Button Architecture */
+.detailsActionBtn {
+  margin-top: auto;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  transition: background-color 0.4s var(--cb-luxury), border-color 0.4s var(--cb-luxury);
+}
+
+.btnText {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--text-pure-white);
+}
+
+.btnArrow {
+  color: var(--text-muted-beige);
+  transition: transform 0.4s var(--cb-luxury);
+}
+
+.productCard:hover .detailsActionBtn {
+  background-color: var(--text-pure-white);
+  border-color: var(--text-pure-white);
+}
+
+.productCard:hover .btnText {
+  color: var(--bg-solid-black);
+}
+
+.productCard:hover .btnArrow {
+  color: var(--bg-solid-black);
+  transform: translateX(4px);
+}
+
+/* Responsive Adaptive Layer */
+@media (max-width: 1024px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .productsGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .mensWrapper {
+    padding-top: 140px;
+  }
+}
