@@ -15,7 +15,7 @@ const MENS_PRODUCTS = [
     name: "PT-18500",
     titleLine: "Premium Blended Fleece Pullover",
     gsm: "280",
-    desc: "8 Ounce Pre,ium Black Fleece Pullover",
+    desc: "8 Ounce Premium Black Fleece Pullover",
     img: pt18500Img,
     available: true,
     colors: ["#000000"],
