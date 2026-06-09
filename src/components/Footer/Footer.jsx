@@ -35,7 +35,7 @@ export default function Footer() {
           
           {/* Instagram Link Update */}
           <a 
-            href="https://www.instagram.com/paktex" 
+            href="https://www.instagram.com/theptxofficial/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className={styles.socialBox} 
