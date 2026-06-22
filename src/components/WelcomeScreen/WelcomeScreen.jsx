@@ -36,7 +36,7 @@ const WelcomeScreen = ({ onComplete }) => {
             <div className="ws-rule" />
             <p className="ws-tagline">Pakistan Textile Exchange</p>
           </div>
-          <span className="ws-meta ws-meta-tl">EST. 2024</span>
+          <span className="ws-meta ws-meta-tl">PTX</span>
           <span className="ws-meta ws-meta-tr">PKX — 001</span>
         </div>
       </div>
@@ -46,7 +46,7 @@ const WelcomeScreen = ({ onComplete }) => {
           <div className="ws-ticker">
             <div className="ws-ticker-bar" />
           </div>
-          <span className="ws-meta ws-meta-bl">RAWALPINDI</span>
+          <span className="ws-meta ws-meta-bl">KARACHI</span>
           <span className="ws-meta ws-meta-br">COLLECTION 2024</span>
         </div>
       </div>
