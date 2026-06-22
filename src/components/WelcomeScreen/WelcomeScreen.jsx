@@ -47,7 +47,7 @@ const WelcomeScreen = ({ onComplete }) => {
             <div className="ws-ticker-bar" />
           </div>
           <span className="ws-meta ws-meta-bl">KARACHI</span>
-          <span className="ws-meta ws-meta-br">COLLECTION 2024</span>
+          <span className="ws-meta ws-meta-br">COLLECTION 2026</span>
         </div>
       </div>
     </div>
