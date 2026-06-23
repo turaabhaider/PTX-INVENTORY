@@ -36,11 +36,7 @@ const WelcomeScreen = ({ onComplete }) => {
             <div className="ws-rule" />
             <p className="ws-tagline">Pakistan Textile Exchange</p>
           </div>
-<<<<<<< HEAD
           <span className="ws-meta ws-meta-tl">PTX</span>
-=======
-          <span className="ws-meta ws-meta-tl">CALIFORNIA</span>
->>>>>>> 9929d3c (origin)
           <span className="ws-meta ws-meta-tr">PKX — 001</span>
         </div>
       </div>
